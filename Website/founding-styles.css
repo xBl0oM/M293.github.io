@@ -1,0 +1,209 @@
+body {
+    background-color: #334B55;
+}
+
+.topnav {
+    background-color: #2a2b2a;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 7rem;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo-center {
+    padding-left: 33vw;
+    width: 15vw;
+}
+
+.logo-text {
+    padding-right: 60vw;
+    width: 30vw;
+    color: rgb(157, 157, 157);
+    font-size: 250%;
+}
+
+.menubar {
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 5%;
+    z-index: 999;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 2rem;
+    max-width: 3rem;
+    min-height: 2rem;
+    max-height: 4rem;
+    height: auto;
+    cursor: pointer;
+
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    margin: 3px 0;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        width: 40px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hamburger-menu {
+        width: 60px;
+        height: 40px;
+
+    }
+}
+
+.menu-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+    margin-bottom: 10rem;
+
+}
+
+.menubar:hover .menu-options {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+
+}
+
+.menu-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.menu-options li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-options a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-options li:hover {
+    background-color: rgb(200, 200, 200);
+
+}
+
+.founding {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1fr 80%;
+}
+
+.founding-text-frame {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #6363638a;
+    border-radius: 5vh;
+    padding-inline-start: 2%;
+
+}
+
+.founding-text {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: end;
+    padding-inline-start: 0.5vh;
+}
+
+
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 1fr 1fr 20%;
+
+}
+
+.footer {
+    grid-row-start: 4;
+    grid-row-end: end;
+    grid-column-start: 1;
+    grid-column-end: end;
+    background-color: #2a2b2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.Logo-footer {
+    width: 20vw;
+    margin-top: 0;
+    align-self: center;
+
+}
+
+.quick-links-footer {
+    color: white;
+}
+
+.quick-links-footer li {
+    font-size: 130%;
+    margin-right: 10px;
+}
+
+.quick-links-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.quick-links-footer a:active,
+.quick-links-footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.Contact-information-footer {
+    color: white;
+
+}
+
+.quick-links-footer a:hover {
+    text-decoration: underline;
+}
